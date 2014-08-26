@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -19036,19 +19036,6 @@ This library includes mechanical hardware (e.g., stand-offs), buttons, switches,
 <smd name="B@2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
 <text x="-3.175" y="3.175" size="1.27" layer="21" font="vector" ratio="15">&gt;NAME</text>
 </package>
-<package name="SW-SPST-SMD035X030">
-<description>Shape on the symbol is misleading, 1-2 are internally connected, as well as 3-4.  Digi-Key: CKN9435CT-ND</description>
-<text x="-1.905" y="1.905" size="1.27" layer="21" font="vector" ratio="15">&gt;NAME</text>
-<smd name="1" x="-1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
-<smd name="2" x="1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
-<smd name="3" x="-1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
-<smd name="4" x="1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
-<wire x1="-1" y1="1.5" x2="0.9" y2="1.5" width="0.2" layer="21"/>
-<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.2" layer="21"/>
-<wire x1="-1.8" y1="0.2" x2="-1.8" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="1.8" y1="0.2" x2="1.8" y2="-0.2" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="0.875" width="0.2" layer="21"/>
-</package>
 <package name="SW-SPST-TH06X06">
 <wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
 <wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
@@ -19104,6 +19091,19 @@ This library includes mechanical hardware (e.g., stand-offs), buttons, switches,
 <smd name="P$1" x="-3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
 <smd name="P$2" x="3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
 <text x="-3" y="2" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="SW-SPST-SMD035X030">
+<description>Shape on the symbol is misleading, 1-2 are internally connected, as well as 3-4.</description>
+<text x="-1.905" y="1.905" size="1.27" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<smd name="1" x="-1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="2" x="1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="3" x="-1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="4" x="1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<wire x1="-1" y1="1.5" x2="0.9" y2="1.5" width="0.2" layer="21"/>
+<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-1.8" y1="0.2" x2="-1.8" y2="-0.2" width="0.2" layer="21"/>
+<wire x1="1.8" y1="0.2" x2="1.8" y2="-0.2" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="0.875" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -20403,6 +20403,21 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,43.18,130.81,CE1,,,,,"/>
+<approved hash="106,1,43.18,123.19,GPIO12,,,,,"/>
+<approved hash="106,1,43.18,128.27,ID_SC,,,,,"/>
+<approved hash="106,1,27.94,128.27,ID_SD,,,,,"/>
+<approved hash="106,1,27.94,125.73,IO5,,,,,"/>
+<approved hash="106,1,27.94,123.19,IO6,,,,,"/>
+<approved hash="106,1,27.94,120.65,IO13,,,,,"/>
+<approved hash="106,1,43.18,118.11,IO16,,,,,"/>
+<approved hash="106,1,27.94,118.11,IO19,,,,,"/>
+<approved hash="106,1,43.18,115.57,IO20,,,,,"/>
+<approved hash="106,1,43.18,113.03,IO21,,,,,"/>
+<approved hash="106,1,43.18,135.89,IO25,,,,,"/>
+<approved hash="106,1,27.94,115.57,IO26,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -171,7 +171,7 @@
 <text x="2.794" y="3.81" size="1.016" layer="21" font="vector" ratio="15">4</text>
 <text x="40.767" y="3.81" size="0.6096" layer="21" font="vector" ratio="15">CH1:Temp</text>
 <text x="31.950025" y="0.42545" size="0.6096" layer="21" font="vector" ratio="15">www.acrobotic.com</text>
-<text x="36.068" y="4.826" size="1.016" layer="21" font="vector" ratio="15">I2C ADC</text>
+<text x="35.687" y="4.953" size="0.889" layer="21" font="vector" ratio="15">ADC (i2c)</text>
 <text x="20.066" y="11.684" size="0.6096" layer="21" font="vector" ratio="15">TX0</text>
 <text x="22.86" y="11.684" size="0.6096" layer="21" font="vector" ratio="15">RX0</text>
 <text x="19.812" y="7.874" size="0.6096" layer="21" font="vector" ratio="15">SDA1</text>
@@ -187,6 +187,7 @@
 <wire x1="30.734" y1="14.986" x2="30.734" y2="0.762" width="0.254" layer="21" style="shortdash"/>
 <text x="42.164" y="0.508" size="0.6096" layer="21" font="vector" ratio="15">By Ihsan Kehribar</text>
 <text x="40.767" y="1.397" size="1.016" layer="21" font="vector" ratio="15">PiExt Starter</text>
+<text x="44.069" y="10.414" size="0.6096" layer="21" font="vector" ratio="15">CH2:Distance</text>
 </plain>
 <libraries>
 <library name="Ai_Miscellany">
@@ -4400,34 +4401,34 @@ design rules under a new name.</description>
 <elements>
 <element name="JP1" library="Ai_Connectors" package="2X20-RPI-BRK" value="2X20" x="25.908" y="18.542"/>
 <element name="U1" library="Ai_IC" package="QRE1113" value="QRE1113" x="48.768" y="7.62" rot="R90"/>
-<element name="R1" library="Ai_Passives" package="RES-0805" value="" x="48.768" y="3.556"/>
-<element name="R2" library="Ai_Passives" package="RES-0805" value="" x="44.958" y="7.366" rot="R90"/>
-<element name="C2" library="Ai_Passives" package="CAP-0805" value="" x="48.514" y="11.938" rot="R180"/>
+<element name="R1" library="Ai_Passives" package="RES-0805" value="100" x="48.768" y="3.556"/>
+<element name="R2" library="Ai_Passives" package="RES-0805" value="220" x="44.958" y="7.366" rot="R90"/>
+<element name="C2" library="Ai_Passives" package="CAP-0805" value="0.1uF" x="49.022" y="12.065" rot="R180"/>
 <element name="S1" library="Ai_Electromechanical" package="SW-SPST-SMD06X06" value="SW-SPSTSMD06X06" x="3.556" y="10.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.572" y="6.858" size="1.016" layer="21" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="R3" library="Ai_Passives" package="RES-0805" value="" x="1.778" y="3.048" rot="R90"/>
-<element name="LED1" library="Ai_LED" package="LED-0805" value="" x="9.398" y="13.97" rot="R90"/>
-<element name="LED2" library="Ai_LED" package="LED-0805" value="" x="9.398" y="11.43" rot="R90"/>
-<element name="LED3" library="Ai_LED" package="LED-0805" value="" x="9.398" y="8.89" rot="R90"/>
-<element name="LED4" library="Ai_LED" package="LED-0805" value="" x="9.398" y="6.35" rot="R90"/>
-<element name="U$1" library="Ai_IC" package="SO08" value="MCP3422" x="39.0144" y="8.50265" rot="R90"/>
+<element name="R3" library="Ai_Passives" package="RES-0805" value="10K" x="1.778" y="3.048" rot="R90"/>
+<element name="LED1" library="Ai_LED" package="LED-0805" value="BLUE" x="9.398" y="13.97" rot="R90"/>
+<element name="LED2" library="Ai_LED" package="LED-0805" value="BLUE" x="9.398" y="11.43" rot="R90"/>
+<element name="LED3" library="Ai_LED" package="LED-0805" value="BLUE" x="9.398" y="8.89" rot="R90"/>
+<element name="LED4" library="Ai_LED" package="LED-0805" value="BLUE" x="9.398" y="6.35" rot="R90"/>
+<element name="U3" library="Ai_IC" package="SO08" value="MCP3422" x="39.0144" y="8.50265" rot="R90"/>
 <element name="U2" library="Ai_IC" package="SOT23-3" value="MCP9700SMD" x="38.862" y="2.54" rot="R180"/>
-<element name="R4" library="Ai_Passives" package="RES-0805" value="" x="13.716" y="13.97" rot="R180"/>
-<element name="R5" library="Ai_Passives" package="RES-0805" value="" x="13.716" y="11.43" rot="R180"/>
-<element name="R6" library="Ai_Passives" package="RES-0805" value="" x="13.716" y="8.89" rot="R180"/>
-<element name="R7" library="Ai_Passives" package="RES-0805" value="" x="13.716" y="6.35" rot="R180"/>
-<element name="C1" library="Ai_Passives" package="CAP-0805" value="" x="44.958" y="11.938" rot="R270"/>
-<element name="LED5" library="Ai_LED" package="LED-0805" value="" x="9.398" y="4.064" rot="R90"/>
-<element name="LED6" library="Ai_LED" package="LED-0805" value="" x="9.398" y="1.524" rot="R90"/>
-<element name="R8" library="Ai_Passives" package="RES-0805" value="" x="13.716" y="4.064" rot="R180"/>
-<element name="R9" library="Ai_Passives" package="RES-0805" value="" x="13.716" y="1.524" rot="R180"/>
+<element name="R4" library="Ai_Passives" package="RES-0805" value="1K" x="13.716" y="13.97" rot="R180"/>
+<element name="R5" library="Ai_Passives" package="RES-0805" value="1K" x="13.716" y="11.43" rot="R180"/>
+<element name="R6" library="Ai_Passives" package="RES-0805" value="1K" x="13.716" y="8.89" rot="R180"/>
+<element name="R7" library="Ai_Passives" package="RES-0805" value="1K" x="13.716" y="6.35" rot="R180"/>
+<element name="C1" library="Ai_Passives" package="CAP-0805" value="0.1uF" x="45.466" y="12.065"/>
+<element name="LED5" library="Ai_LED" package="LED-0805" value="BLUE" x="9.398" y="4.064" rot="R90"/>
+<element name="LED6" library="Ai_LED" package="LED-0805" value="BLUE" x="9.398" y="1.524" rot="R90"/>
+<element name="R8" library="Ai_Passives" package="RES-0805" value="1K" x="13.716" y="4.064" rot="R180"/>
+<element name="R9" library="Ai_Passives" package="RES-0805" value="1K" x="13.716" y="1.524" rot="R180"/>
 <element name="SERIAL" library="Ai_Connectors" package="1X02-NOFIRST" value="1X02NOFIRST" x="22.098" y="13.716"/>
 <element name="SPI" library="Ai_Connectors" package="1X04-NOFIRST" value="1X04NOFIRST" x="24.638" y="2.54"/>
 <element name="I2C" library="Ai_Connectors" package="1X02-NOFIRST" value="1X02NOFIRST" x="22.098" y="9.906"/>
 <element name="POWER" library="Ai_Connectors" package="1X03-NOFIRST" value="1X03NOFIRST" x="23.368" y="6.35"/>
-<element name="R10" library="Ai_Passives" package="RES-0805" value="" x="33.655" y="7.747" rot="R270"/>
-<element name="R11" library="Ai_Passives" package="RES-0805" value="" x="34.544" y="13.716"/>
+<element name="R10" library="Ai_Passives" package="RES-0805" value="10K" x="33.655" y="7.747" rot="R270"/>
+<element name="R11" library="Ai_Passives" package="RES-0805" value="10K" x="34.544" y="13.716"/>
 <element name="LOGO1" library="Ai_Miscellany" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="5.842" y="2.032"/>
 <element name="U$3" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="31.877" y="1.143"/>
 </elements>
@@ -4454,9 +4455,9 @@ design rules under a new name.</description>
 <contactref element="R2" pad="2"/>
 <contactref element="S1" pad="B@1"/>
 <contactref element="U2" pad="3"/>
-<contactref element="U$1" pad="2"/>
-<contactref element="U$1" pad="7"/>
-<contactref element="U$1" pad="6"/>
+<contactref element="U3" pad="2"/>
+<contactref element="U3" pad="7"/>
+<contactref element="U3" pad="6"/>
 <contactref element="LED1" pad="C"/>
 <contactref element="LED2" pad="C"/>
 <contactref element="LED4" pad="C"/>
@@ -4492,7 +4493,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SDA">
 <contactref element="JP1" pad="3"/>
-<contactref element="U$1" pad="4"/>
+<contactref element="U3" pad="4"/>
 <contactref element="I2C" pad="1"/>
 <contactref element="R11" pad="1"/>
 <wire x1="4.318" y1="17.272" x2="4.318" y2="10.414" width="0.254" layer="16"/>
@@ -4517,7 +4518,7 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="R3" pad="1"/>
 <contactref element="U2" pad="1"/>
-<contactref element="U$1" pad="3"/>
+<contactref element="U3" pad="3"/>
 <polygon width="0.4064" layer="16">
 <vertex x="0" y="21.59"/>
 <vertex x="51.816" y="21.59"/>
@@ -4529,7 +4530,6 @@ design rules under a new name.</description>
 <via x="45.466" y="3.556" extent="1-16" drill="0.508"/>
 <contactref element="C1" pad="2"/>
 <contactref element="POWER" pad="2"/>
-<wire x1="47.72275" y1="11.807825" x2="47.564" y2="11.938" width="0.254" layer="1"/>
 <wire x1="47.751325" y1="9.4192" x2="47.868" y2="9.42" width="0.254" layer="1"/>
 <via x="39.28745" y="9.2837" extent="1-16" drill="0.508"/>
 <wire x1="43.307" y1="9.9695" x2="42.545" y2="9.2075" width="0.254" layer="1"/>
@@ -4552,15 +4552,13 @@ design rules under a new name.</description>
 <wire x1="35.494" y1="13.716" x2="42.545" y2="13.716" width="0.254" layer="1"/>
 <wire x1="42.545" y1="13.716" x2="43.307" y2="12.954" width="0.254" layer="1"/>
 <wire x1="43.307" y1="12.954" x2="43.307" y2="9.9695" width="0.254" layer="1"/>
-<wire x1="47.72275" y1="11.807825" x2="47.752" y2="11.807825" width="0.254" layer="1"/>
-<wire x1="47.752" y1="11.807825" x2="47.752" y2="13.97" width="0.254" layer="1"/>
-<wire x1="47.751325" y1="9.4192" x2="47.751325" y2="11.800675" width="0.254" layer="1"/>
-<wire x1="47.751325" y1="11.800675" x2="47.564" y2="11.938" width="0.254" layer="1"/>
-<wire x1="44.98975" y1="11.00625" x2="44.958" y2="10.988" width="0.254" layer="1"/>
-<wire x1="44.958" y1="10.988" x2="44.3755" y2="11.038" width="0.254" layer="1"/>
-<wire x1="44.3755" y1="11.038" x2="43.307" y2="9.9695" width="0.254" layer="1"/>
-<wire x1="47.751325" y1="11.800675" x2="46.93865" y2="10.988" width="0.254" layer="1"/>
-<wire x1="46.93865" y1="10.988" x2="44.958" y2="10.988" width="0.254" layer="1"/>
+<wire x1="46.416" y1="12.065" x2="48.072" y2="12.065" width="0.4064" layer="1"/>
+<wire x1="47.868" y1="9.42" x2="47.3185" y2="9.9695" width="0.254" layer="1"/>
+<wire x1="47.3185" y1="9.9695" x2="43.307" y2="9.9695" width="0.254" layer="1"/>
+<wire x1="47.3185" y1="9.9695" x2="48.072" y2="10.723" width="0.254" layer="1"/>
+<wire x1="48.072" y1="10.723" x2="48.072" y2="12.065" width="0.254" layer="1"/>
+<wire x1="47.752" y1="13.97" x2="48.072" y2="13.65" width="0.254" layer="1"/>
+<wire x1="48.072" y1="13.65" x2="48.072" y2="12.065" width="0.254" layer="1"/>
 </signal>
 <signal name="TXO">
 <contactref element="JP1" pad="8"/>
@@ -4662,7 +4660,7 @@ design rules under a new name.</description>
 <wire x1="23.876" y1="10.414" x2="23.368" y2="9.906" width="0.254" layer="1"/>
 <wire x1="33.655" y1="8.697" x2="33.655" y2="10.287" width="0.254" layer="1"/>
 <wire x1="33.655" y1="10.287" x2="33.528" y2="10.414" width="0.254" layer="1"/>
-<contactref element="U$1" pad="5"/>
+<contactref element="U3" pad="5"/>
 <wire x1="33.528" y1="10.414" x2="36.3982" y2="10.40765" width="0.254" layer="1"/>
 </signal>
 <signal name="IO4">
@@ -4737,7 +4735,7 @@ design rules under a new name.</description>
 <signal name="D">
 <contactref element="U1" pad="4"/>
 <contactref element="R2" pad="1"/>
-<contactref element="U$1" pad="1"/>
+<contactref element="U3" pad="1"/>
 <wire x1="46.97355" y1="6.596975" x2="47.868" y2="5.82" width="0.254" layer="1"/>
 <wire x1="41.631275" y1="6.596975" x2="41.6306" y2="6.59765" width="0.254" layer="1"/>
 <wire x1="41.631275" y1="6.596975" x2="44.958" y2="6.596975" width="0.254" layer="1"/>
@@ -4746,7 +4744,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="T">
 <contactref element="U2" pad="2"/>
-<contactref element="U$1" pad="8"/>
+<contactref element="U3" pad="8"/>
 <wire x1="37.912" y1="3.54" x2="36.846" y2="3.54" width="0.254" layer="1"/>
 <wire x1="36.846" y1="3.54" x2="36.322" y2="4.064" width="0.254" layer="1"/>
 <wire x1="36.322" y1="4.064" x2="36.322" y2="6.52145" width="0.254" layer="1"/>

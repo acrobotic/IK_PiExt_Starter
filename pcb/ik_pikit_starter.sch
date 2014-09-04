@@ -18475,7 +18475,6 @@ This library includes USB, pin headers and sockets in different configurations (
 <pad name="24" x="3.81" y="1.27" drill="1.016" diameter="1.651"/>
 <pad name="6" x="-19.05" y="1.27" drill="1.016" diameter="1.651"/>
 <wire x1="-25.146" y1="-3.302" x2="-23.241" y2="-3.302" width="0.254" layer="21"/>
-<text x="-26.67" y="-2.286" size="1.27" layer="25" font="vector" ratio="15">1</text>
 <pad name="27" x="8.89" y="-1.27" drill="1.016" diameter="1.651"/>
 <pad name="28" x="8.89" y="1.27" drill="1.016" diameter="1.651"/>
 <pad name="29" x="11.43" y="-1.27" drill="1.016" diameter="1.651"/>
@@ -19549,7 +19548,8 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <smd name="2" x="1.8" y="-0.9" dx="1.2" dy="0.6" layer="1"/>
 <smd name="3" x="1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
 <smd name="4" x="-1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
-<text x="-3.81" y="2.54" size="1.524" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-4.445" y="4.445" size="1.524" layer="25" font="vector" ratio="15" rot="SR270">&gt;NAME</text>
+<rectangle x1="-3.048" y1="-1.016" x2="-2.286" y2="-0.762" layer="21" rot="R90"/>
 </package>
 <package name="SO08">
 <wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
@@ -19731,7 +19731,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <part name="R2" library="Ai_Passives" deviceset="RES" device="0805" value="220"/>
 <part name="SUPPLY2" library="Ai_Power" deviceset="GND" device=""/>
 <part name="C2" library="Ai_Passives" deviceset="CAP" device="0805" value="0.1uF"/>
-<part name="S1" library="Ai_Electromechanical" deviceset="SW-SPST" device="SMD06X06" value="SW-SPSTSMD06X06"/>
+<part name="RST" library="Ai_Electromechanical" deviceset="SW-SPST" device="SMD06X06" value="SW-SPSTSMD06X06"/>
 <part name="R3" library="Ai_Passives" deviceset="RES" device="0805" value="10K"/>
 <part name="SUPPLY4" library="Ai_Power" deviceset="GND" device=""/>
 <part name="LED1" library="Ai_LED" deviceset="LED" device="0805" value="BLUE"/>
@@ -19784,7 +19784,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <instance part="R2" gate="G$1" x="152.4" y="104.14" rot="R270"/>
 <instance part="SUPPLY2" gate="GND" x="152.4" y="93.98"/>
 <instance part="C2" gate="G$1" x="137.16" y="128.27" rot="R180"/>
-<instance part="S1" gate="G$1" x="50.8" y="35.56"/>
+<instance part="RST" gate="G$1" x="50.8" y="35.56"/>
 <instance part="R3" gate="G$1" x="43.18" y="43.18" rot="R270"/>
 <instance part="SUPPLY4" gate="GND" x="58.42" y="27.94"/>
 <instance part="LED1" gate="G$1" x="160.02" y="58.42"/>
@@ -19901,7 +19901,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <junction x="152.4" y="97.79"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="B@1"/>
+<pinref part="RST" gate="G$1" pin="B@1"/>
 <wire x1="55.88" y1="35.56" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="35.56" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
@@ -20242,7 +20242,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <label x="58.42" y="133.35" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="A@1"/>
+<pinref part="RST" gate="G$1" pin="A@1"/>
 <wire x1="45.72" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
@@ -20403,21 +20403,6 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="106,1,43.18,130.81,CE1,,,,,"/>
-<approved hash="106,1,43.18,123.19,GPIO12,,,,,"/>
-<approved hash="106,1,43.18,128.27,ID_SC,,,,,"/>
-<approved hash="106,1,27.94,128.27,ID_SD,,,,,"/>
-<approved hash="106,1,27.94,125.73,IO5,,,,,"/>
-<approved hash="106,1,27.94,123.19,IO6,,,,,"/>
-<approved hash="106,1,27.94,120.65,IO13,,,,,"/>
-<approved hash="106,1,43.18,118.11,IO16,,,,,"/>
-<approved hash="106,1,27.94,118.11,IO19,,,,,"/>
-<approved hash="106,1,43.18,115.57,IO20,,,,,"/>
-<approved hash="106,1,43.18,113.03,IO21,,,,,"/>
-<approved hash="106,1,43.18,135.89,IO25,,,,,"/>
-<approved hash="106,1,27.94,115.57,IO26,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
